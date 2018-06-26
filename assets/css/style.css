@@ -630,12 +630,12 @@ section {
 
 .dot-nav li:hover {
     opacity: 1;
-}
+}   
 
 .active-dot {
     /* width: 7px !important; */
-    border-color: #f93e2e !important;
-    background: #f93e2e !important;
+    border-color: #ffffff !important;
+    background: #0060B1 !important;
     transform: translateX(0)
 }
 
@@ -652,7 +652,7 @@ section {
 }
 
 .active-hover-text {
-    color: #f93e2e !important;
+    color: #00B07F !important;
 }
 
 .dot-nav a {
@@ -703,8 +703,8 @@ section {
     position: relative;
     display: block;
     height: 15vh;
-    background: #0d141d;
-    background-image: linear-gradient(to top,#00b07f 0%,#005eb2 100%);
+    background: #ffffff;
+    /*background-image: linear-gradient(to top,#00b07f 0%,#005eb2 100%);*/
     overflow: hidden;
     width: 100%;
 }
@@ -761,8 +761,7 @@ section {
 
 .ticker-block {
     font-family: 'Roboto', sans-serif;
-    color: #3b4251;
-    color: white;
+    color: #000000;
     padding-right: 35px;
 }
 
@@ -782,12 +781,12 @@ section {
 }
 
 .high {
-    color: white;
+    color: black;
 }
 
 .ticker-block .ticker-session-high,
 .currency {
-    color: #ffffff;
+    color: #000000;
 }
 
 .ticker-block .ticker-session-high {
@@ -949,7 +948,8 @@ section {
 }
 
 .social-icon {
-    width: 13px;
+    width: 30px;
+    float: left;
 }
 
 
