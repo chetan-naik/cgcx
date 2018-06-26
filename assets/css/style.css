@@ -703,6 +703,7 @@ section {
     display: block;
     height: 15vh;
     background: #0d141d;
+    background-image: linear-gradient(to top,#00b07f 0%,#005eb2 100%);
     overflow: hidden;
     width: 100%;
 }
@@ -823,11 +824,12 @@ section {
 .features .headline {
     font-weight: bold;
     color: #f73e2e;
+    color: #ffffff !important;
 }
 
 .features {
-    background: rgba(0, 0, 0, .88);
-    background: url('../images/lap-top.jpg') top center;
+    /* background-image: linear-gradient(to right,#00b07f 0%,#005eb2 100%); */
+    background-image: linear-gradient(to right,#00b07f 0%,#005eb2 100%);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -852,6 +854,10 @@ section {
     letter-spacing: 3px;
     line-height: 1.2em;
     margin: 0 auto;
+}
+
+.about h5{
+    color: #000000 !important;
 }
 
 .features p,
@@ -882,17 +888,17 @@ section {
 /* =========== About =========== */
 
 .about {
-    background: #e0e0e0;
-    background: url('../images/glass-code.jpg') center center;
+    /* background: #e0e0e0; 
+    background: url('../images/glass-code.jpg') center center; */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 .about h4,
-.about p {
-    color: white;
-}
+.about p { color: #7e7e7e; }
+
+.about-list-content:hover p { color: white; }
 
 .about h1,
 .about .headline {
@@ -907,11 +913,8 @@ section {
 
 /* =========== Contact Section =========== */
 
-.contact {
-    background: white;
-}
-
 .contact a {
+    color: white;
     -webkit-transition: all .05s linear;
     -moz-transition: all .05s linear;
     -o-transition: all .05s linear;
@@ -1058,7 +1061,8 @@ section {
 .feat-list .feat-list-content:hover {
     opacity: 1 !important;
     border-radius: 5px;
-    background: rgba(13, 20, 29, 0.8);
+    /* background: rgba(13, 20, 29, 0.8); */
+    background-image: linear-gradient(to right,#00b07f 0%,#005eb2 100%);
     -webkit-transition: all .35s linear;
     -moz-transition: all .35s linear;
     transition: all .35s linear;
