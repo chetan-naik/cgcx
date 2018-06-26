@@ -450,7 +450,8 @@ section {
     position: relative;
     padding-top: 0;
     /* background-image: url('../images/wires-lighter.png'); */
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to right,#00b07f 0%,#005eb2 100%);
+    background-repeat: repeat-x;
     height: 85vh;
     background-position: 50% 50%;
     background-attachment: fixed;
@@ -786,7 +787,7 @@ section {
 
 .ticker-block .ticker-session-high,
 .currency {
-    color: #858585
+    color: #ffffff;
 }
 
 .ticker-block .ticker-session-high {
@@ -1590,3 +1591,4 @@ input:-webkit-autofill:active {
 .companylogo { list-style-type: none; margin: 0; padding: 0; overflow: hidden;   }
 .companylogo li{ float: left; }
 .companylogo li img{ width: 150px;  }
+

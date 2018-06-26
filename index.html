@@ -22,6 +22,7 @@
     <link href="assets/css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/particlestyle.css" rel="stylesheet">
 
     <!-- Font Awesomes -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
@@ -180,18 +181,11 @@
         <!-- Hero -->
             <section id="home" class="container-fluid chapter">
 
-                <div class="video" style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-color: rgb(0, 0, 0); background-repeat: no-repeat; background-position: 50% 50%; background-image: none;">
-                    <video autoplay loop muted poster="assets/vid/blockchain_poster.jpg" style="margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1; width: auto; height: 140%;">
-                        <source src="assets/vid/blockchain.mp4" type="video/mp4">
-                        <source src="assets/vid/blockchain.webm" type="video/webm">
-                        <!-- <source src="assets/vid/blockchain9MB.mp4" type="video/ogg"> -->
-                    </video>
-                </div>
-
+                <div id="particles-js">
                 <div class="row align-items-center t-center w-95-center">
                     <div class="col-12">
-                        <h1 data-aos-once="true" data-aos="fade-down" class="headline">Singapore’s First Insured Hybrid Crypto Platform</h1>
-                         
+                        <h1 data-aos-once="true" data-aos="fade-down" class="headline" style="position: absolute; padding-top: 15%; padding-left: 15%; font-size: 3.8em;">
+                            Singapore’s First Insured<br>Hybrid Crypto Platform</h1>
                         <!-- <h4 class="tagline content-bottom hide-on-v-lg">Trade any Digital Asset quickly, easily<br />and efficiently</h4> -->
                         
                         <!-- <a data-aos-once="true" data-aos="fade-up" class="btn btn-lg demo-btn underline" href="trade.html">Demo Our<br class="show-on-xs"> Platform</a> -->
@@ -229,6 +223,7 @@
                             </a>
                         </li>
                     </ul>
+                </div>
                 </div>
             </section>
             <!-- End Hero -->
@@ -481,6 +476,12 @@
     <!-- AlphaPoint -->
     <script src="js/config.js"></script>
     <script src="js/library.min.js"></script>
+
+    <!-- Particle  -->
+    <script src="js/particle/particles.min.js"></script>
+    <script src="js/particle/app.js"></script>
+
+    <!-- End Particle -->
     <script type="text/javascript">
         AlphaPoint.config.templateStyle = 'retail'
         AlphaPoint.config.v2Widgets = true;
