@@ -933,9 +933,8 @@ section {
 
 .footer-link,
 .sitemap-link {
-    display: block;
-    text-align: left;
-    float: left;
+    display: inline;
+    text-align: center;
 }
 
 .social-link:hover,
@@ -1596,9 +1595,9 @@ input:-webkit-autofill:active {
     display: none !important;
 }
 
-.companylogo { list-style-type: none; margin: 0; padding: 0; overflow: hidden;   }
-.companylogo li{ float: left; }
-.companylogo li img{ width: 150px; }
+.companylogo { list-style-type: none; margin: 0; padding: 0; overflow: hidden; width: 1300px; height: 150px; }
+.companylogo li{ float: left; width: 130px; height: 150px; }
+.companylogo li img{ width: 100%; align-self: center; text-align: center; margin: 0 auto; }
 
 .btn-custombtn{ border: 1px solid #ccc; background: #005EB1 !important; letter-spacing: 7px; border-radius: 0; }
 .btn-custombtn1{ border: 1px solid #ccc; background: #00B07F !important; letter-spacing: 7px; border-radius: 0; }
