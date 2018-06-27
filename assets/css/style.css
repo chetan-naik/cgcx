@@ -364,7 +364,7 @@ ul.menu {
     left: 0;
     position: absolute;
     top: 0;
-    color: #f93e2e;
+    color: #005fb2;
     display: block;
     zoom: 1;
     -webkit-transition: width 1.75s cubic-bezier(0.2, .7, .3, 1), -webkit-transform .8s cubic-bezier(0.2, .7, .3, 1);
@@ -391,7 +391,8 @@ ul.menu {
 }
 
 .menu-item a:hover {
-    color: #f93e2e;
+    color: #005FB2;
+    opacity: 0.7;
 }
 
 .menu-item a:hover>.clip-wrap,
@@ -1067,8 +1068,9 @@ section {
 .feat-list .feat-list-content:hover {
     opacity: 1 !important;
     border-radius: 5px;
-    /* background: rgba(13, 20, 29, 0.8); */
-    background-image: linear-gradient(to right,#00b07f 0%,#005eb2 100%);
+    /*background: rgba(13, 20, 29, 0.8);*/
+    /*background-image: linear-gradient(to right,#00b07f 0%,#005eb2 100%);*/
+    background: #005FB2;
     -webkit-transition: all .35s linear;
     -moz-transition: all .35s linear;
     transition: all .35s linear;
