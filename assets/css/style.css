@@ -1615,7 +1615,7 @@ input:-webkit-autofill:active {
 @media (max-width: 1024px) { .nav-items-container{ right: 0%; } .nav-items li a{ font-size: 0.4em;  }  .nav-items li{ padding-right: 0.8em; } }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) { .visible-xs , .visible-sm{ display: block; } .headline{ font-size: 35px !important; } }
+@media (max-width: 768px) { .visible-xs , .visible-sm{ display: block; } .headline{ font-size: 35px !important; } .footerblock{ margin: 20px; } }
  
 /* Landscape phones and down */
-@media (max-width: 480px) { .visible-xs , .visible-sm{ display: block; } .headline{ font-size: 35px !important; } }
+@media (max-width: 480px) { .visible-xs , .visible-sm{ display: block; } .headline{ font-size: 35px !important; } .footerblock{ margin: 20px; } }
