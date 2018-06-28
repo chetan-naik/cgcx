@@ -1,3 +1,7 @@
+// =============================================
+//          Custom JS for Landing Page
+// =============================================
+
 var dot_nav = $('.dot-nav'),
     sections = $('.section'),
     chapters = $('.chapter'),
@@ -53,7 +57,7 @@ const runOnScroll = () => {
                 'color': 'white'
             });
             $('.nav').css({
-                'background': 'transparent',
+                'background': '#0177a4',
                 'border-bottom': '0'
             });
 
@@ -73,7 +77,7 @@ const runOnScroll = () => {
                 'color': 'white'
             });
             $('.nav').css({
-                'background': 'transparent',
+                'background': '#0177a4',
                 'border-bottom': '0'
             });
 
@@ -93,7 +97,7 @@ const runOnScroll = () => {
                 'color': 'white'
             });
             $('.nav').css({
-                'background': 'transparent',
+                'background': '#0177a4',
                 'border-bottom': '0'
             });
 
@@ -113,7 +117,7 @@ const runOnScroll = () => {
                 'color': '#3b4251'
             });
             $('.nav').css({
-                'background': '#0d141d',
+                'background': '#0177a4',
                 'border-bottom': '1px solid rgba(0, 0, 0, 0.15)'
             });
             break;
@@ -292,7 +296,7 @@ $(document).ready(() => {
                             clearProps: 'all'
                         });
                         $(document.body).removeClass('modal-open');
-                    }, 4000);
+                    }, 20000);
                 },
                 ease: Power0.easeNone
             })
@@ -315,7 +319,7 @@ $(document).ready(() => {
                             clearProps: 'all'
                         });
                         $(document.body).removeClass('modal-open');
-                    }, 4000);
+                    }, 20000);
                 },
                 ease: Power0.easeNone
             })
