@@ -194,7 +194,7 @@ a:focus,
 
 .nav-items-container {
     right: 6%;
-    top: calc(50% - 18px);
+    top: calc(50% - 25px);
     position: absolute;
 }
 
@@ -205,13 +205,13 @@ a:focus,
 .nav-items li {
     display: inline-block;
     font-weight: bold;
-    padding-right: 2.5em
+    padding-right: 1.0em
 }
 
 .nav-items li a {
     font-family: 'NimbusReg', 'Didact Gothic', 'Maven Pro', sans-serif;
     color: #fff;
-    font-size: 1em;
+    font-size: 0.5em;
     color: rgba(256, 256, 256, 1);
     border-top: 2px solid transparent;
     -webkit-transition: all .25s linear;
@@ -221,7 +221,7 @@ a:focus,
 
 .nav-items li a:hover {
     padding-top: 5px;
-    border-top: 5px solid #f93b2a;
+    border-top: 3px solid #ffffff;
     color: #ffffff;
     opacity: 0.7;
 }
@@ -1720,3 +1720,17 @@ input:-webkit-autofill:active {
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+/* Custom CSS */
+
+.visible-xs , .visible-sm{ display: none; }
+
+.nav-items-container{ right: 0%; }
+
+@media (max-width: 1024px) { .nav-items-container{ right: 0%; } .nav-items li a{ font-size: 0.4em;  }  .nav-items li{ padding-right: 0.8em; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) { .visible-xs , .visible-sm{ display: block; } }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { .visible-xs , .visible-sm{ display: block; } }
