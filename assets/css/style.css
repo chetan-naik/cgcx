@@ -1611,7 +1611,7 @@ input:-webkit-autofill:active {
 }
 
 .slick-slide img {
-    width: 60%;
+    width: 85%;
 }
 
 .slick-slider
@@ -1730,7 +1730,7 @@ input:-webkit-autofill:active {
 @media (max-width: 1024px) { .nav-items-container{ right: 0%; } .nav-items li a{ font-size: 0.4em;  }  .nav-items li{ padding-right: 0.8em; } }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) { .visible-xs , .visible-sm{ display: block; } }
+@media (max-width: 768px) { .visible-xs , .visible-sm{ display: block; } .headline{ font-size: 35px !important; } }
  
 /* Landscape phones and down */
-@media (max-width: 480px) { .visible-xs , .visible-sm{ display: block; } }
+@media (max-width: 480px) { .visible-xs , .visible-sm{ display: block; } .headline{ font-size: 35px !important; } }
