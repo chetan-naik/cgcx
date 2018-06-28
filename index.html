@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -7,22 +8,31 @@
 <!--<![endif]-->
 
 <head>
-    <title>CGCX | Singapore’s First Insured Hybrid Crypto Platform</title>
+    <title>CGCX</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="icon" href="favicon.png">
+    <link rel="shortcut icon" href="images/icon/CGX-Token-04.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cgcx.io/wp-content/uploads/2018/04/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cgcx.io/wp-content/uploads/2018/04/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cgcx.io/wp-content/uploads/2018/04/favicon-16x16.png">
+
     <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
     <meta name="description" content="">
     <meta name="keyword" content="">
-    <meta name="autor" content="Brandshark">
+    <meta name="author" content="Brandshark">
     <!-- Stylesheets -->
+
     <!-- Bootstrap v4.0.0-beta.6 -->
     <link href="assets/css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/particlestyle.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/lightslider.css">
+
+    <!-- Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Font Awesomes -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
@@ -39,7 +49,7 @@
     <link href="assets/css/aos.css" rel="stylesheet">
     <script src="js/aos.js"></script>
 
-    <!-- Javascript Smooth Scroll Library --> 
+    <!-- Javascript Smooth Scroll Library -->
     <script src="js/smooth-scroll.min.js"></script>
 </head>
 
@@ -71,14 +81,14 @@
     </div>
 
     <!-- Header -->
-    <nav class="nav">
+    <nav class="nav" style="background: #0177a4 !important;">
         <div class="nav-container">
             <div class="nav-inner-container">
                 <a class="logo" href="#home">
                     <!-- <h1>Alpha<span class="point">Point</span></h1> -->
                     <!-- ============= OR USE AN IMAGE ============= -->
                     <!-- <img src="assets/images/logo/cgcx-logo-minified.png" width="150">  -->
-                    <img src="assets/images/logo/cgcx-logo-minified.png" width="150">
+                    <a href="http://13.232.133.156/cgcx/"><img src="assets/images/logo/cgcx-logo-minified.png" width="150"></a>
                 </a>
                 <!-- Elements for loggedin/loggedout toggle -->
                 <div class="hide">
@@ -88,6 +98,62 @@
                 
                 <div class="nav-items-container only-show-on-desktop">
                     <ul class="nav-items">
+                        <li class="menu-item">
+                            <a href="#home">Home
+                                <span class="clip-wrap">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#exchange">Exchange
+                                <span class="clip-wrap">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#Token">Utility Token
+                                <span class="clip-wrap">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#Attributes">Key Attributes
+                                <span class="clip-wrap">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#Orderbooks">Orderbooks
+                                <span class="clip-wrap">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#contact">Contact
+                                <span class="clip-wrap">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item only-show-on-mobile">
+                            <a href="#login" class="modal-btn login-btn">Login
+                                <span class="clip-wrap">
+                                    <span>Login</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item only-show-on-mobile">
+                            <a href="#signup" class="modal-btn register-btn">Sign Up
+                                <span class="clip-wrap">
+                                    <span>Sign Up</span>
+                                </span>
+                            </a>
+                        </li>
                         <li id="login">
                             <a href="#login" class="modal-btn login-btn">Login</a>
                         </li>
@@ -97,7 +163,7 @@
                     </ul>
                 </div>
 
-                <span>
+                <span class="visible-xs visible-sm">
                     <div id="hamburger">
                         <span class="line"></span>
                         <span class="line"></span>
@@ -116,21 +182,21 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#utility">Ultimate Utility Token
+                                    <a href="#exchange">Exchange
                                         <span class="clip-wrap">
-                                            <span>Ultimate Utility Token</span>
+                                            <span>Exchange</span>
                                         </span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#about">About
+                                    <a href="#Token">Utility Token
                                         <span class="clip-wrap">
-                                            <span>About</span>
+                                            <span>Utility Token</span>
                                         </span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#attributes">Key Attributes
+                                    <a href="#Attributes">Key Attributes
                                         <span class="clip-wrap">
                                             <span>Key Attributes</span>
                                         </span>
@@ -184,27 +250,31 @@
                 <div id="particles-js" style="position: absolute;">
                 <div class="row align-items-center t-center w-95-center">
                     <div class="col-12">
-                        <h1 data-aos-once="true" data-aos="fade-down" class="headline" style="position: absolute; padding-top: 15%; padding-left: 15%; font-size: 3.8em;">
-                            Singapore’s First Insured<br>Hybrid Crypto Platform</h1>
+                        <h1 data-aos-once="true" data-aos="fade-down" class="headline" style="position: absolute; padding-top: 13%; font-size: 3.4em; letter-spacing: 7px; margin: 0 auto; width: 100%;">
+                            World’s First Insured<br>Hybrid Crypto Platform
+                            <br>
+                            <a href="#" class="btn btn-custombtn modal-btn register-btn">OPEN ACCOUNT</a>
+                            <a href="https://exchange.cgcx.io/trade.html" target="_blank" class="btn btn-custombtn1">VIEW DEMO</a>
+                        </h1>
                         <!-- <h4 class="tagline content-bottom hide-on-v-lg">Trade any Digital Asset quickly, easily<br />and efficiently</h4> -->
                         
-                        <!-- <a data-aos-once="true" data-aos="fade-up" class="btn btn-lg demo-btn underline" href="trade.html">Demo Our<br class="show-on-xs"> Platform</a> -->
+                        <!-- <a data-aos-once="true" data-aos="fade-up" class="btn btn-lg demo-btn underline" href="trade.html" style="position: absolute;">Demo Our<br class="show-on-xs"> Platform</a> -->
                     </div>
 
-                    <ul class="dot-nav">
+                    <!-- <ul class="dot-nav">
                         <li class="active-dot">
                             <a href="#home">
                                 <span class="hover-text active-hover-text">Home</span>
                             </a>
                         </li>
                         <li class="">
-                            <a href="#about">
-                                <span data-goto="about" class="hover-text">About</span>
+                            <a href="#exchange">
+                                <span data-goto="exchange" class="hover-text">Exchange</span>
                             </a>
                         </li>
                         <li class="">
-                            <a href="#Exchange">
-                                <span data-goto="Exchange" class="hover-text">Exchange</span>
+                            <a href="#Token">
+                                <span data-goto="Token" class="hover-text">Token</span>
                             </a>
                         </li>
                         <li class="">
@@ -222,48 +292,52 @@
                                 <span data-goto="contact" class="hover-text">Contact</span>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
-                </div>
-            </section>
-            <!-- End Hero -->
-
-            <!-- Ticker Widget -->
-            <div id="ticker-container" class="container-fluid">
-                <div ap-widget="TickerScrolling" class="ticker-scrolling"></div>
             </div>
-            <!-- End Ticker Widget -->
+        </section>
+        <!-- End Hero -->
+
+        <!-- Ticker Widget -->
+        <div id="ticker-container">
+            <div class="falloff">
+                <div class="falloffLeft"></div>
+                <div class="falloffRight"></div>
+            </div>
+            <div ap-widget="TickerScrolling" class="ticker-scrolling"></div>
+        </div>
+        <!-- End Ticker Widget -->
 
         <!-- Utility -->
-        <section id="utility" class="section container-fluid chapter features" style="padding-bottom: 0;">
-            <div class="row align-items-center justify-content-center content-box-container w-95-center">
+        <section id="exchange" class="section container-fluid chapter features" style="padding-bottom: 0;">
+            <div class="row align-items-center justify-content-center content-box-container w-95-center" style="margin-top: 0;">
 
                 <div class="col-12 mb-md-25 mb-sm-0">
-                    <h1 data-aos-once="true" data-aos="fade-down" class="headline text-center">Ultimate Utility Token</h1>
+                    <h1 data-aos-once="true" data-aos="fade-down" class="headline text-center">Cypto Exchange For Everyone</h1>
                     <hr data-aos-once="true" data-aos="zoom-in" class="title-hr">
                 </div>
-
+                <br><br><br>
                 <div data-aos-once="true" data-aos="fade-right" class="col-lg-4 col-md-6 col-sm-12 feat-list">
                     <div class="feat-list-content content-box">
-                        <img class="content-icon" src="assets/images/icons/red1.png" />
+                        <img class="content-icon" src="assets/images/icons/normal-users.png" />
                         <h5 class="subtitle force-flex-break">Normal Users</h5>
-                        <p style="text-align: justify;">CGCX Tokens can be used to pay the transactions fee for the trades executed in the exchange and earn discounts up to 50% on the transaction fee. This discount is not available for others who do pay transaction fee with other currencies.</p>
+                        <p style="text-align: center;">CGCX Tokens can be used to pay the transactions fee for the trades executed in the exchange and earn discounts up to 50% on the transaction fee. This discount is not available for others who do pay transaction fee with other currencies.</p>
                     </div>
                 </div>
 
                 <div data-aos-once="true" data-aos="fade-right" class="col-lg-4 col-md-6 col-sm-12 feat-list">
                     <div class="feat-list-content content-box">
-                        <img class="content-icon" src="assets/images/icons/red2.png" />
+                        <img class="content-icon" src="assets/images/icons/traders-white.png" />
                         <h5 class="subtitle force-flex-break">Traders</h5>
-                        <p style="text-align: justify;">User can get various products and services from the merchant partners at a discounted rate while paying with the CGCX Token. Merchants would be offered lower transaction fee when they accept CGCX tokens as mode of payments.</p>
+                        <p style="text-align: center;">User can get various products and services from the merchant partners at a discounted rate while paying with the CGCX Token. Merchants would be offered lower transaction fee when they accept CGCX tokens as mode of payments.</p>
                     </div>
                 </div>
 
                 <div data-aos-once="true" data-aos="fade-left" class="col-lg-4 col-md-6 col-sm-12 feat-list">
                     <div class="feat-list-content content-box">
-                        <img class="content-icon" src="assets/images/icons/red3.png" />
+                        <img class="content-icon" src="assets/images/icons/Institutional-users.png" />
                         <h5 class="subtitle force-flex-break">Institutional user</h5>
-                        <p style="text-align: justify;">Users in the CGCX platform can vote for multiple tokens listing using their CGCX Tokens. We plan to use 50% of tokens received in the voting fee for insurance costs to build further insurance protections against cyber-attacks</p>
+                        <p style="text-align: center;">Users in the CGCX platform can vote for multiple tokens listing using their CGCX Tokens. We plan to use 50% of tokens received in the voting fee for insurance costs to build further insurance protections against cyber-attacks</p>
                     </div>
                 </div>
             </div>
@@ -272,12 +346,12 @@
         <!-- End Features -->
 
         <!-- About -->
-        <section id="token" class="section container-fluid chapter about" style="">
+        <section id="Token" class="section container-fluid chapter about" style="">
             <div class="row align-items-center justify-content-center content-box-container h-95 w-100-center">
                 <div class="row mb-25">
                     <div class="col-12 center-flex-ie">
-                        <h1 data-aos-once="true" data-aos="fade-down" class="headline text-center" style="background-image: linear-gradient(to right,#00b07f 0%,#005eb2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Cypto Exchange<br>For Everyone</h1>
-                        <hr data-aos-once="true" data-aos="zoom-in" class="title-hr">
+                        <h1 data-aos-once="true" data-aos="fade-down" class="headline text-center" style="background-image: linear-gradient(to right,#00b07f 0%,#005eb2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Ultimate Utility Token</h1>
+                        <hr data-aos-once="true" data-aos="zoom-in" class="title-hr" style="border: 5px solid #005EB1;">
                         <!-- <h4 data-aos-once="true" data-aos="fade-up" class="text-center">CGCX mobile app for iOS and Android</h4> -->
                         <br>
                     </div>
@@ -285,24 +359,24 @@
 
                 <div class="row about-list w-95-center">
                     <div data-aos-once="true" data-aos="fade-down" class="col-md-6 col-xs-12 content-box about-list-content">
-                        <img class="content-icon" src="assets/images/icons/red1.png" />
+                        <img class="content-icon" src="assets/images/icons/traders-gradient.png" />
                         <h5 class="subtitle force-flex-break">Participate in CGCX exchange trading and earn discounts</h5>
                         <p>CGCX Tokens can be used to pay the transactions fee for the trades executed in the exchange and earn discounts up to 50% on the transaction fee. This discount is not available for others who do pay transaction fee with other currencies.</p>
                     </div>
                     <div data-aos-once="true" data-aos="fade-down" class="col-md-6 col-xs-12 content-box about-list-content">
-                        <img class="content-icon" src="assets/images/icons/red2.png" />
+                        <img class="content-icon" src="assets/images/icons/merchant-solutions-gradient.png" />
                         <h5 class="subtitle force-flex-break">Your preferred mode of payment with merchants</h5>
                         <p>User can get various products and services from the merchant partners at a discounted rate while paying with the CGCX Token. Merchants would be offered lower transaction fee when they accept CGCX tokens as mode of payments.</p>
                     </div>
                 </div>
                 <div class="row about-list w-95-center">
                     <div data-aos-once="true" data-aos="fade-up" class="col-md-6 col-xs-12 content-box about-list-content">
-                        <img class="content-icon torch" src="assets/images/icons/red3.png" />
+                        <img class="content-icon torch" src="assets/images/icons/ICO-Platform-Gradient.png" />
                         <h5 class="subtitle force-flex-break"> Participate in ICO voting in CGCX ICO platform </h5>
                         <p>Users in the CGCX platform can vote for multiple tokens listing using their CGCX Tokens. We plan to use 50% of tokens received in the voting fee for insurance costs to build further insurance protections against cyber-attacks.</p>
                     </div>
                     <div data-aos-once="true" data-aos="fade-up" class="col-md-6 col-xs-12 content-box about-list-content">
-                        <img class="content-icon torch" src="assets/images/icons/red4.png" />
+                        <img class="content-icon torch" src="assets/images/icons/smart-contract-gradient.png" />
                         <h5 class="subtitle force-flex-break">Use in CGCX smart contract platform</h5>
                         <p>Our platform includes smart contracts, involving trade finance and other agreements in an automatic, secure and transparent way. CGCX tokens benefit users by providing utility to pay for transactional charges, making escrow and settlements for Smart Contracts.</p>
                     </div>
@@ -322,28 +396,28 @@
 
                 <div data-aos-once="true" data-aos="fade-right" class="col-lg-4 col-md-6 col-sm-12 feat-list">
                     <div class="feat-list-content content-box">
-                        <img src="https://cgcx.io/images/exchange/attributes-24-7.png" style="width: 50%; margin: 0 auto; display: block;" />
+                        <img src="assets/images/icons/attributes-24-7.png" style="width: 50%; margin: 0 auto; display: block;" />
                         <br>
                         <h5 class="subtitle force-flex-break">24/7 Trading</h5>
-                        <p style="text-align: justify;">Resilient architecture supports around-the-clock trading</p>
+                        <p style="text-align: center;">Resilient architecture supports around-the-clock trading</p>
                     </div>
                 </div>
 
                 <div data-aos-once="true" data-aos="fade-right" class="col-lg-4 col-md-6 col-sm-12 feat-list">
                     <div class="feat-list-content content-box">
-                        <img src="https://cgcx.io/images/exchange/attributes-real-time.png" style="width: 50%; margin: 0 auto; display: block;" />
+                        <img src="assets/images/icons/attributes-real-time.png" style="width: 50%; margin: 0 auto; display: block;" />
                         <br>
                         <h5 class="subtitle force-flex-break">Real-Time Trade Settlements</h5>
-                        <p style="text-align: justify;">Occurs instantaneously across all instruments.</p>
+                        <p style="text-align: center;">Occurs instantaneously across all instruments.</p>
                     </div>
                 </div>
 
                 <div data-aos-once="true" data-aos="fade-left" class="col-lg-4 col-md-6 col-sm-12 feat-list">
                     <div class="feat-list-content content-box">
-                        <img src="https://cgcx.io/images/exchange/attributes-multi-currency.png" style="width: 50%; margin: 0 auto; display: block;" />
+                        <img src="assets/images/icons/attributes-multi-currency.png" style="width: 50%; margin: 0 auto; display: block;" />
                         <br>
                         <h5 class="subtitle force-flex-break">Multi-Currency Trading</h5>
-                        <p style="text-align: justify;">Continuous addition of currency to meet market demand</p>
+                        <p style="text-align: center;">Continuous addition of currency to meet market demand</p>
                     </div>
                 </div>
             </div>
@@ -352,37 +426,67 @@
         <!-- End Key Attributes -->
 
         <!-- Exchange With Liquid Orderbooks -->
-        <section id="Orderbooks" class="section container-fluid chapter features" style="padding-bottom: 0; background: #fff;">
+        <section id="Orderbooks" class="section container-fluid chapter features" style="padding-bottom: 0; padding-top: 0; background: #fff;">
             <div class="row align-items-center justify-content-center content-box-container">
 
                 <div class="col-12 mb-md-25 mb-sm-0">
                     <h1 data-aos-once="true" data-aos="fade-down" class="headline text-center" style="background-image: linear-gradient(to right,#00b07f 0%,#005eb2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Exchange With Liquid Orderbooks</h1>
-                    <hr data-aos-once="true" data-aos="zoom-in" class="title-hr">
+                    <hr data-aos-once="true" data-aos="zoom-in" class="title-hr" style="border: 5px solid #005EB1;">
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <h5 style="color: #000; text-align: justify;">A fully-populated, live and dynamic order book will be readily available across digital asset markets from day one of operation. Entry and Exit would never be an issue for traders in our exchange. Our exchange offers increased liquidity with better depth, leading to lesser price impacts. Partnerships are in the pipeline with leading crypto exchanges that will help increase synergy for the benefit of the community as a whole.</h5>
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-12" style="display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+                        <h5 style="color: #000; display: block; text-align: center;">A fully-populated, live and dynamic order book will be readily available across digital asset markets from day one of operation. Entry and Exit would never be an issue for traders in our exchange. Our exchange offers increased liquidity with better depth, leading to lesser price impacts. Partnerships are in the pipeline with leading crypto exchanges that will help increase synergy for the benefit of the community as a whole.</h5>
+                    </div>
                 </div>
 
-                <div class="col-lg-6 col-md-8 col-sm-12">
-                    <ul class="companylogo" style="list-style-type: none;">
-                        <li><img src="https://cgcx.io/images/exchange/liquid/logo-bitt.png" class="img-responsive"></li>
-                        <li><img src="https://cgcx.io/images/exchange/liquid/logo-bitfinex.png" class="img-responsive"></li>
-                        <li><img src="https://cgcx.io/images/exchange/liquid/logo-brighton.png" class="img-responsive"></li>
-                        <li><img src="https://cgcx.io/images/exchange/liquid/logo-bitex.png" class="img-responsive"></li>
-                        <li><img src="https://cgcx.io/images/exchange/liquid/logo-bitstamp.png" class="img-responsive"></li>
-                        <li><img src="https://cgcx.io/images/exchange/liquid/logo-dasset.png" class="img-responsive"></li>
-                        <li><img src="https://cgcx.io/images/exchange/liquid/logo-kraken.png" class="img-responsive"></li>
-                        <li><img src="https://cgcx.io/images/exchange/liquid/logo-bitcoins.png" class="img-responsive"></li>
-                        <li><img src="https://cgcx.io/images/exchange/liquid/logo-btc.png" class="img-responsive"></li>
-                        <li><img src="https://cgcx.io/images/exchange/liquid/logo-poloniex.png" class="img-responsive"></li>
-                    </ul>
+                <div class="row">
+                    <div class="container">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                             <div class="demo">
+                                <div class="item">
+                                    <ul id="content-slider" class="content-slider">
+                                        <li>
+                                            <img src="https://cgcx.io/images/exchange/liquid/logo-bitfinex.png">
+                                        </li>
+                                        <li>
+                                            <img src="https://cgcx.io/images/exchange/liquid/logo-brighton.png">
+                                        </li>
+                                        <li>
+                                            <img src="https://cgcx.io/images/exchange/liquid/logo-bitcoins.png">
+                                        </li>
+                                        <li>
+                                            <img src="https://cgcx.io/images/exchange/liquid/logo-bitstamp.png">
+                                        </li>
+                                        <li>
+                                            <img src="https://cgcx.io/images/exchange/liquid/logo-dasset.png">
+                                        </li>
+                                        <li>
+                                            <img src="https://cgcx.io/images/exchange/liquid/logo-btc.png">
+                                        </li>
+                                        <li>
+                                            <img src="https://cgcx.io/images/exchange/liquid/logo-poloniex.png">
+                                        </li>
+                                        <li>
+                                            <img src="https://cgcx.io/images/exchange/liquid/logo-bitex.png">
+                                        </li>
+                                        <li>
+                                            <img src="https://cgcx.io/images/exchange/liquid/logo-bitt.png">
+                                        </li>
+                                        <li>
+                                            <img src="https://cgcx.io/images/exchange/liquid/logo-kraken.png">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>  
+                        </div>
+                   </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact -->
-        <section id="contact" class="contact section container-fluid chapter features" style="color: #fff !important;">
+        <section id="contact" class="contact section container-fluid chapter features" style="color: #fff !important; padding-bottom: 0px;">
             <div class="align-items-center content-box-container">
 
                 <div class="row mb-25">
@@ -392,86 +496,84 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-4 footerblock">
                         <h5>Address</h5>
                         <hr>
-                        <a class="footer-link" target="_blank" href="https://www.google.com/maps/place/335+Madison+Ave,+New+York,+NY+10017/data=!4m2!3m1!1s0x89c25901eefade89:0xabb26d1fd9d19af6?sa=X&ved=0ahUKEwiH8PCR6qXXAhUJ7SYKHdMqDNoQ8gEIJTAA">
-                            <div class="footer-address">70A Duxton Road, </div>
-                            <div class="footer-address-last">Singapore 089529</div>
+                        <a class="footer-link" target="_blank" href="#">
+                            <div class="footer-address">70A Duxton Road, Singapore - 089529</div>
                         </a>
                     </div>
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-4 footerblock">
                         <h5>Contact</h5>
                         <hr>
-                        <!-- <a class="footer-link" href="">
+                        <!-- <a class="footer-link" href="">    
                             <div class="footer-item">contact@cgcx.io</div>
                         </a> -->
-                        <a href="https://twitter.com/CGCXofficial" onclick="return false;">
-                            <div class="footer-item footer-item--social">
-                                <i class="fa fa-twitter social-icon" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                        <a href="https://www.facebook.com/CGCXofficial/" onclick="return false;">
-                            <div class="footer-item footer-item--social">
-                                <i class="fa fa-facebook social-icon" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                        <a href="https://t.me/CGCXofficial" onclick="return false;">
-                            <div class="footer-item footer-item--social">
-                                <i class="fa fa-telegram social-icon" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                        <a href="https://www.linkedin.com/company/cgcxofficial/" onclick="return false;">
-                            <div class="footer-item footer-item--social">
-                                <i class="fa fa-linkedin social-icon" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                        <a href="https://www.reddit.com/r/CGCXofficial/" onclick="return false;">
-                            <div class="footer-item footer-item--social">
-                                <i class="fa fa-reddit social-icon" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                        <a href="https://medium.com/@CGCXofficial/" onclick="return false;">
-                            <div class="footer-item footer-item--social">
-                                <i class="fa fa-medium social-icon" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                        <a href="https://www.youtube.com/c/CGCXOfficial/" onclick="return false;">
-                            <div class="footer-item footer-item--social">
-                                <i class="fa fa-youtube social-icon" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                        <a href="https://www.instagram.com/cgcxofficial/" onclick="return false;">
-                            <div class="footer-item footer-item--social">
-                                <i class="fa fa-instagram social-icon" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                        <a href="mailto:contact@cgcx.io?subject=Interested%20in%20CGCX%20Tokens" onclick="return false;">
-                            <div class="footer-item footer-item--social">
-                                <i class="fa fa-envelope social-icon" aria-hidden="true"></i>
-                            </div>
-                        </a>
+                        <span style="margin: 0 auto; text-align: center; display: block; width: 360px;">
+                            <a href="https://twitter.com/CGCXofficial" onclick="return false;">
+                                <div class="footer-item footer-item--social">
+                                    <i class="fa fa-twitter social-icon" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.facebook.com/CGCXofficial/" onclick="return false;">
+                                <div class="footer-item footer-item--social">
+                                    <i class="fa fa-facebook social-icon" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                            <a href="https://t.me/CGCXofficial" onclick="return false;">
+                                <div class="footer-item footer-item--social">
+                                    <i class="fa fa-telegram social-icon" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/company/cgcxofficial/" onclick="return false;">
+                                <div class="footer-item footer-item--social">
+                                    <i class="fa fa-linkedin social-icon" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.reddit.com/r/CGCXofficial/" onclick="return false;">
+                                <div class="footer-item footer-item--social">
+                                    <i class="fa fa-reddit social-icon" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                            <a href="https://medium.com/@CGCXofficial/" onclick="return false;">
+                                <div class="footer-item footer-item--social">
+                                    <i class="fa fa-medium social-icon" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.youtube.com/c/CGCXOfficial/" onclick="return false;">
+                                <div class="footer-item footer-item--social">
+                                    <i class="fa fa-youtube social-icon" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/cgcxofficial/" onclick="return false;">
+                                <div class="footer-item footer-item--social">
+                                    <i class="fa fa-instagram social-icon" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                            <a href="mailto:contact@cgcx.io?subject=Interested%20in%20CGCX%20Tokens" onclick="return false;">
+                                <div class="footer-item footer-item--social">
+                                    <i class="fa fa-envelope social-icon" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </span>
                     </div>
 
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-4 footerblock" style="text-align: center; display: block;">
                         <h5>Sitemap</h5>
                         <hr>
                         <!-- <h6 class="footer-item-left">Sitemap |</h6> -->
-                        <a href="#" onclick="return false;" class="sitemap-link">
-                            Terms
-                        </a>
-                        <a href="#" onclick="return false;" class="sitemap-link">
-                            Privacy policy
-                        </a>
-                        <a href="#" onclick="return false;" class="sitemap-link">
-                            Fees
-                        </a>
-                        <a href="#" onclick="return false;" class="sitemap-link">
-                            API
-                        </a>
-
+                        <a href="documents/CGCX-Terms.pdf" target="_blank" onclick="return false;" class="sitemap-link" style="font-size: 13px;">Terms | </a>
+                        <a href="documents/CGCX-Privacy.pdf" target="_blank" onclick="return false;" class="sitemap-link" style="font-size: 13px;">Privacy policy | </a>
+                        <a href="documents/CGCX-Risk-Disclosure-Statement.pdf" target="_blank" onclick="return false;" class="sitemap-link" style="font-size: 13px;">Risk Disclosure | </a>
+                        <a href="#" onclick="return false;" data-toggle="popover" title="Terms" data-html="true" data-content="No trading fee till August 31 2018<br>No Deposit fee till August 31 2018<br>Wire transfer in and out will attract bank charges" class="sitemap-link" style="font-size: 13px;">Fees  | </a>
+                        <a href="documents/CGCX-API-Documentation.pdf" target="_blank" onclick="return false;" class="sitemap-link" style="font-size: 13px;">API </a>
                     </div>
                 </div>
+                <br><br><br><br><br><br>
+                <div style="display: block; text-align: center;" class="row">
+                    <span style="text-align: center; font-size: 0.8em;">Copyright &copy; 2018 CGCX Pte LTD. All Rights Reserved.</span>
+                </div>
+
             </div>
         </section>
         <!-- End Contact -->
@@ -510,22 +612,18 @@
     <script src="js/config.js"></script>
     <script src="js/library.min.js"></script>
 
-    <!-- Particle  -->
-    <script src="js/particle/particles.min.js"></script>
-    <script src="js/particle/app.js"></script>
-
     <!-- End Particle -->
     <script type="text/javascript">
         AlphaPoint.config.templateStyle = 'retail'
         AlphaPoint.config.v2Widgets = true;
-        // console.log(AlphaPoint);
+         console.log(AlphaPoint);
         function initMap() {
             var pos = {
-                lat: 40.753915,  
-                lng: -73.978357
+                lat: 1.2780149,
+                lng: 103.8429703
             };
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 12,
+                zoom: 15,
                 center: pos
             });
             var marker = new google.maps.Marker({
@@ -534,7 +632,34 @@
             });
         }
     </script>
+
+    <!-- Particle  -->  
+    <script src="js/particle/particles.min.js"></script>
+    <script src="js/particle/app.js"></script>
+
     <script src="js/widgets.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="js/logoslider.js"></script>
+
+    <script>
+         $(document).ready(function() {
+            $("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 
     <!-- Google Maps API -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKt9ZIEbnCCsLtqnVoxwAo4CI1S6882No&callback=initMap">

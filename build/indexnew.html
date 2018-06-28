@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{AlphaPoint}}</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png">
+    <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+    <meta name="description" content="APEX Advanced UI is a heavily featured interface for advanced cryptocurrency traders.">
+    <meta name="keyword" content="">
+    <meta name="author" content="AlphaPoint">
+
+    <!-- Stylesheets -->
+    <!-- Bootstrap v4.0.0-beta.6 -->
+    <link href="assets/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesomes -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Didact+Gothic|Roboto" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+    <!-- Animate On Scroll (AOS) Library -->
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <script src="js/aos.js"></script>
+
+    <!-- Javascript Smooth Scroll Library -->
+    <script src="js/smooth-scroll.min.js"></script>
+</head>
+
+<body id="top">
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div id="login" class="login-modal">
+        <span class="close-m close-login"></span>
+        <div class="login-container">
+            <div ap-widget="LoginForm" to='trade.html' hide-header hideCancelBtn="true">
+                <div class="ap-form-test">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="register" class="register-modal">
+        <span class="close-m close-register"></span>
+        <div class="register-container">
+            <div ap-widget="RegisterForm" hide-header hideCancelBtn="true">
+                <div class="ap-form-test">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-inner-container">
+                <a class="logo" href="#home">
+                    <h1>{{AlphaPoint}}</h1>
+                    <!-- 
+                        ============= OR USE AN IMAGE =============
+                        <img src="img/company-logo.png" width="150"> 
+                    -->
+                </a>
+                <!-- Elements for loggedin/loggedout toggle -->
+                <div class="hide">
+                    <a ap-action='Logout' href='index.html' name="logout">Log Out</a>
+                    <a href='trade.html'>Trade</a>
+                </div>
+
+                <div class="nav-items-container only-show-on-desktop">
+                    <ul class="nav-items">
+                        <li id="login">
+                            <a href="#login" class="modal-btn login-btn" ap-translate="INDEX.MENU_LOGIN">
+                                Login
+                            </a>
+                        </li>
+                        <li id="signup">
+                            <a href="#signup" class="modal-btn register-btn" ap-translate="INDEX.MENU_SIGNUP">
+                                Sign Up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <span>
+                    <div id="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+
+                    <!-- SideBar Slideout Menu -->
+                    <div class="menu-wrapper">
+                        <div class="menu-container">
+                            <ul class="menu">
+                                <li class="menu-item">
+                                    <a href="#home">
+                                        <span ap-translate="INDEX.MENU_HOME">
+                                            Home
+                                        </span>
+                                        <span ap-translate="INDEX.MENU_HOME" class="clip-wrap">
+                                            <span>Home</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#features">
+                                        <span ap-translate="INDEX.MENU_FEATURES">
+                                            Features
+                                        </span>
+                                        <span ap-translate="INDEX.MENU_FEATURES" class="clip-wrap">
+                                            <span>Features</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#about">
+                                        <span ap-translate="INDEX.MENU_ABOUT">
+                                            About
+                                        </span>
+                                        <span ap-translate="INDEX.MENU_ABOUT" class="clip-wrap">
+                                            <span>About</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#contact">
+                                        <span ap-translate="INDEX.MENU_CONTACT">
+                                            Contact
+                                        </span>
+                                        <span ap-translate="INDEX.MENU_CONTACT" class="clip-wrap">
+                                            <span>Contact</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu-item only-show-on-mobile">
+                                    <a href="#login">
+                                        <span ap-translate="INDEX.MENU_LOGIN" class="modal-btn login-btn">
+                                            Login
+                                        </span>
+                                        <span ap-translate="INDEX.MENU_LOGIN" class="clip-wrap">
+                                            <span>Login</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu-item only-show-on-mobile">
+                                    <a href="#signup">
+                                        <span ap-translate="INDEX.MENU_SIGNUP" class="modal-btn register-btn">
+                                            Sign Up
+                                        </span>
+                                        <span ap-translate="INDEX.MENU_SIGNUP" class="clip-wrap">
+                                            <span>Sign Up</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End SideBar Slideout Menu -->
+                </span>
+
+            </div>
+        </div>
+    </nav>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+    <div class="main" role="main">
+
+        <!-- Hero -->
+        <section id="home" class="container-fluid chapter">
+
+            <div class="video" style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-color: rgb(0, 0, 0); background-repeat: no-repeat; background-position: 50% 50%; background-image: none;">
+                <video autoplay loop muted poster="assets/vid/blockchain_poster.jpg" style="margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1; width: auto; height: 140%;">
+                    <source src="assets/vid/blockchain.mp4" type="video/mp4">
+                    <source src="assets/vid/blockchain.webm" type="video/webm">
+                    <!-- <source src="assets/vid/blockchain9MB.mp4" type="video/ogg"> -->
+                </video>
+            </div>
+
+            <div class="row align-items-center t-center w-95-center">
+                <div class="col-12">
+                    <h1 data-aos-once="true" data-aos="fade-down" class="headline">Best In Breed Asset Exchange</h1>
+                    <!-- <h4 class="tagline content-bottom hide-on-v-lg">Trade any Digital Asset quickly, easily
+                                <br />and efficiently</h4> -->
+                    <a data-aos-once="true" data-aos="fade-up" class="btn btn-lg demo-btn underline" href="trade.html">Demo Our
+                        <br class="show-on-xs"> Platform</a>
+                </div>
+
+                <ul class="dot-nav">
+                    <li class="active-dot">
+                        <a href="#home">
+                            <span class="hover-text active-hover-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#features">
+                            <span data-goto="features" class="hover-text">Features</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#about">
+                            <span data-goto="about" class="hover-text">About</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#contact">
+                            <span data-goto="contact" class="hover-text">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- End Hero -->
+
+        <!-- Ticker Widget -->
+        <div id="ticker-container">
+            <div class="falloff">
+                <div class="falloffLeft"></div>
+                <div class="falloffRight"></div>
+            </div>
+            <div ap-widget="TickerScrolling" class="ticker-scrolling"></div>
+        </div>
+        <!-- End Ticker Widget -->
+
+        <!-- Features -->
+        <section id="features" class="section container-fluid chapter features">
+            <div class="row align-items-center justify-content-center content-box-container w-95-center">
+
+                <div class="col-12 mb-md-25 mb-sm-0">
+                    <h1 data-aos-once="true" data-aos="fade-down" class="headline text-center">Features</h1>
+                    <hr data-aos-once="true" data-aos="zoom-in" class="title-hr">
+                </div>
+
+                <div data-aos-once="true" data-aos="fade-right" class="col-lg-3 col-md-6 col-sm-12 feat-list">
+                    <div class="feat-list-content content-box">
+                        <img class="content-icon" src="assets/images/icons/red1.png" />
+                        <h5 class="subtitle force-flex-break">Next Gen Crypto Exchange</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor, nunc nec mattis finibus,
+                            nulla eros suscipit nibh, sed posuere risus libero id libero.</p>
+                    </div>
+                </div>
+
+                <div data-aos-once="true" data-aos="fade-right" class="col-lg-3 col-md-6 col-sm-12 feat-list">
+                    <div class="feat-list-content content-box">
+                        <img class="content-icon" src="assets/images/icons/red2.png" />
+                        <h5 class="subtitle force-flex-break">Market Data Streaming</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor, nunc nec mattis finibus,
+                            nulla eros suscipit nibh, sed posuere risus libero id libero.</p>
+                    </div>
+                </div>
+
+                <div data-aos-once="true" data-aos="fade-left" class="col-lg-3 col-md-6 col-sm-12 feat-list">
+                    <div class="feat-list-content content-box">
+                        <img class="content-icon" src="assets/images/icons/red3.png" />
+                        <h5 class="subtitle force-flex-break">Advanced Financial Integrations</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor, nunc nec mattis finibus,
+                            nulla eros suscipit nibh, sed posuere risus libero id libero.</p>
+                    </div>
+                </div>
+
+                <div data-aos-once="true" data-aos="fade-left" class="col-lg-3 col-md-6 col-sm-12 feat-list">
+                    <div class="feat-list-content content-box">
+                        <img class="content-icon" src="assets/images/icons/red4.png" />
+                        <h5 class="subtitle force-flex-break">Modular Design</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor, nunc nec mattis finibus,
+                            nulla eros suscipit nibh, sed posuere risus libero id libero.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End Features -->
+
+        <!-- About -->
+        <section id="about" class="section container-fluid chapter about">
+            <div class="row align-items-center justify-content-center content-box-container h-95 w-100-center">
+                <div class="row mb-25">
+                    <div class="col-12 center-flex-ie">
+                        <h1 data-aos-once="true" data-aos="fade-down" class="headline text-center">About {{AlphaPoint}}</h1>
+                        <hr data-aos-once="true" data-aos="zoom-in" class="title-hr">
+                        <h4 data-aos-once="true" data-aos="fade-up" class="text-center">We provide the most actionable digital currency trading platform.</h4>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row about-list w-95-center">
+                    <div data-aos-once="true" data-aos="fade-down" class="col-md-6 col-xs-12 content-box about-list-content">
+                        <img class="content-icon" src="assets/images/icons/red1.png" />
+                        <h5 class="subtitle force-flex-break">Enterprise Matching Engine</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor, nunc nec mattis finibus,
+                            nulla eros suscipit nibh, sed posuere risus libero id libero.</p>
+                    </div>
+                    <div data-aos-once="true" data-aos="fade-down" class="col-md-6 col-xs-12 content-box about-list-content">
+                        <img class="content-icon" src="assets/images/icons/red2.png" />
+                        <h5 class="subtitle force-flex-break">Trade Any Digital Currency</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor, nunc nec mattis finibus,
+                            nulla eros suscipit nibh, sed posuere risus libero id libero.</p>
+                    </div>
+                </div>
+                <div class="row about-list w-95-center">
+                    <div data-aos-once="true" data-aos="fade-up" class="col-md-6 col-xs-12 content-box about-list-content">
+                        <img class="content-icon torch" src="assets/images/icons/red3.png" />
+                        <h5 class="subtitle force-flex-break">Superior Asset Security</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor, nunc nec mattis finibus,
+                            nulla eros suscipit nibh, sed posuere risus libero id libero.</p>
+                    </div>
+                    <div data-aos-once="true" data-aos="fade-up" class="col-md-6 col-xs-12 content-box about-list-content">
+                        <img class="content-icon torch" src="assets/images/icons/red4.png" />
+                        <h5 class="subtitle force-flex-break">Faster Transactions</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor, nunc nec mattis finibus,
+                            nulla eros suscipit nibh, sed posuere risus libero id libero.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About -->  
+
+        <!-- Contact -->
+        <section id="contact" class="section container-fluid chapter contact">
+            <div class="align-items-center content-box-container">
+
+                <div class="row mb-25">
+                    <div class="col-sm-12">
+                        <div id="map"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <h5>Address</h5>
+                        <hr>
+                        <a class="footer-link" target="_blank" href="https://www.google.com/maps/place/335+Madison+Ave,+New+York,+NY+10017/data=!4m2!3m1!1s0x89c25901eefade89:0xabb26d1fd9d19af6?sa=X&ved=0ahUKEwiH8PCR6qXXAhUJ7SYKHdMqDNoQ8gEIJTAA">
+                            <div class="footer-address">335 Madison Ave, 16th Floor</div>
+                            <div class="footer-address-last">New York, NY 10017</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <h5>Contact</h5>
+                        <hr>
+                        <a class="footer-link" href="mailto:support@company.com">
+                            <div class="footer-item">support@company.com</div>
+                        </a>
+                        <a href="#" onclick="return false;">
+                            <div class="footer-item footer-item--social">
+                                <i class="fa fa-twitter social-icon" aria-hidden="true"></i>
+                                <span class="social-link">Twitter</span>
+                            </div>
+                        </a>
+                        <a href="#" onclick="return false;">
+                            <div class="footer-item footer-item--social">
+                                <i class="fa fa-facebook social-icon" aria-hidden="true"></i>
+                                <span class="social-link">Facebook</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <h5>Sitemap</h5>
+                        <hr>
+                        <!-- <h6 class="footer-item-left">Sitemap |</h6> -->
+                        <a href="#" onclick="return false;" class="sitemap-link">
+                            Terms
+                        </a>
+                        <a href="#" onclick="return false;" class="sitemap-link">
+                            Privacy policy
+                        </a>
+                        <a href="#" onclick="return false;" class="sitemap-link">
+                            Fees
+                        </a>
+                        <a href="#" onclick="return false;" class="sitemap-link">
+                            API
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact -->
+    </div>
+    <!-- End Main -->
+
+    <div id="widget-modal" class="widget-modal">
+        <span class="close-m close-widget"></span>
+        <div class="widget-modal-container">
+
+            <div id="VerifyEmail" ap-widget="VerifyEmailV2" class="hide" hide-header hideCancelBtn="true">
+                <div class="ap-form-test"></div>
+            </div>
+
+            <div id="ResetPassword" ap-widget="ResetPasswordV2" class="hide" hide-header hideCancelBtn="true">
+                <div class="ap-form-test"></div>
+            </div>
+
+            <div id="ConfirmWithdraw" ap-widget="ConfirmWithdrawV2" class="hide" hide-header hideCancelBtn="true">
+                <div class="ap-form-test"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="merchantDepositConfirmation" ap-wrapper="MerchantDepositConfirmation"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+    <script type="text/babel" src="js/script.js"></script>
+    <script src="js/lib/growl.js"></script>
+
+    <!-- AlphaPoint -->
+    <script src="js/config.js"></script>
+    <script src="js/library.min.js"></script>
+    <script type="text/javascript">
+        AlphaPoint.config.templateStyle = 'retail'
+        AlphaPoint.config.v2Widgets = true;
+        // console.log(AlphaPoint);
+        function initMap() {
+            var pos = {
+                lat: 40.753915,
+                lng: -73.978357
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: pos
+            });
+            var marker = new google.maps.Marker({
+                position: pos,
+                map: map
+            });
+        }
+    </script>
+    <script src="js/widgets.min.js"></script>
+
+    <!-- Google Maps API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKt9ZIEbnCCsLtqnVoxwAo4CI1S6882No&callback=initMap">
+    </script>
+</body>
+
+</html>
