@@ -252,7 +252,7 @@
                 <div class="row align-items-center t-center w-95-center">
                     <div class="col-12">
                         <h1 data-aos-once="true" data-aos="fade-down" class="headline" style="position: absolute; padding-top: 13%; font-size: 3.4em; letter-spacing: 7px; margin: 0 auto; width: 100%;">
-                            World’s First Insured<br>Hybrid Crypto Platrform
+                            World’s First Insured<br>Hybrid Crypto Platform
                             <br>
                             <a href="#" class="btn btn-custombtn modal-btn register-btn">OPEN ACCOUNT</a>
                             <a href="https://exchange.cgcx.io/trade.html" target="_blank" class="btn btn-custombtn1">VIEW DEMO</a>
@@ -262,7 +262,7 @@
                         <!-- <a data-aos-once="true" data-aos="fade-up" class="btn btn-lg demo-btn underline" href="trade.html" style="position: absolute;">Demo Our<br class="show-on-xs"> Platform</a> -->
                     </div>
 
-                    <ul class="dot-nav">
+                    <!-- <ul class="dot-nav">
                         <li class="active-dot">
                             <a href="#home">
                                 <span class="hover-text active-hover-text">Home</span>
@@ -293,7 +293,7 @@
                                 <span data-goto="contact" class="hover-text">Contact</span>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </section>
@@ -588,15 +588,11 @@
     <script src="js/config.js"></script>
     <script src="js/library.min.js"></script>
 
-    <!-- Particle  -->  
-    <script src="js/particle/particles.min.js"></script>
-    <script src="js/particle/app.js"></script>
-
     <!-- End Particle -->
     <script type="text/javascript">
         AlphaPoint.config.templateStyle = 'retail'
         AlphaPoint.config.v2Widgets = true;
-        // console.log(AlphaPoint);
+         console.log(AlphaPoint);
         function initMap() {
             var pos = {
                 lat: 1.2780149,
@@ -612,6 +608,11 @@
             });
         }
     </script>
+
+    <!-- Particle  -->  
+    <script src="js/particle/particles.min.js"></script>
+    <script src="js/particle/app.js"></script>
+
     <script src="js/widgets.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="js/logoslider.js"></script>
@@ -622,7 +623,8 @@
             $(document).scroll(function() { 
                 scroll_pos = $(this).scrollTop();
                 if(scroll_pos > 210) {
-                    $("nav").css('background-color', 'black');
+                    $("nav").css('background-color', '#0177a4');
+                    $("nav").css('border-bottom', '0px');
                 }
             });
         });
