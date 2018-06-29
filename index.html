@@ -28,7 +28,8 @@
     <link href="assets/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/particlestyle.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/owlcarousel/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/owlcarousel/owl.carousel.min.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/advancestyle.css"> -->
 
     <!-- Material Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -122,13 +123,6 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="#Orderbooks">Orderbooks
-                                <span class="clip-wrap">
-                                    <span></span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
                             <a href="#contact">Contact
                                 <span class="clip-wrap">
                                     <span></span>
@@ -194,13 +188,6 @@
                                     <a href="#Attributes">Key Attributes
                                         <span class="clip-wrap">
                                             <span>Key Attributes</span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#Orderbooks">Orderbooks
-                                        <span class="clip-wrap">
-                                            <span>Orderbooks</span>
                                         </span>
                                     </a>
                                 </li>
@@ -436,6 +423,11 @@
         </section>
         <!-- End Key Attributes -->
 
+        <section>
+            <!-- <div ap-widget="InstrumentSelect"></div -->
+            <div ap-widget="Ticker"></div>
+        </section>
+
         <!-- Exchange With Liquid Orderbooks -->
 <!--         <section id="Orderbooks" class="section container-fluid chapter features" style="min-height: 500px; padding-bottom: 0; padding-top: 0; background: #fff;">
             <div class="row align-items-center justify-content-center content-box-container">
@@ -611,7 +603,7 @@
     <script type="text/javascript">
         AlphaPoint.config.templateStyle = 'retail'
         AlphaPoint.config.v2Widgets = true;
-         console.log(AlphaPoint);
+        console.log(AlphaPoint);
         function initMap() {
             var pos = {
                 lat: 1.2780149,
@@ -635,9 +627,9 @@
 
     <script src="js/widgets.min.js"></script>
 
-    <script src="assets/css/owlcarousel/owl.carousel.min.js"></script>
+<!-- <script src="assets/css/owlcarousel/owl.carousel.min.js"></script> -->
 
-    <script type="text/javascript">
+<!--     <script type="text/javascript">
         $('.owl-carousel').owlCarousel({
         loop:true,
         margin:100,
@@ -659,7 +651,7 @@
         }
         })
 
-    </script>
+    </script> -->
 
     <script type="text/javascript">
         $(document).ready(function(){
@@ -667,7 +659,7 @@
         });
     </script>
 
-    <style type="text/css">.owl-nav{ display: none !important; }</style>
+    <!-- <style type="text/css">.owl-nav{ display: none !important; }</style> -->
 
     <!-- Google Maps API -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKt9ZIEbnCCsLtqnVoxwAo4CI1S6882No&callback=initMap">
