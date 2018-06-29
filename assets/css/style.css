@@ -200,6 +200,7 @@ a:focus,
 
 .nav-items {
     list-style-type: none;
+    padding-top: 5px;
 }
 
 .nav-items li {
@@ -210,7 +211,7 @@ a:focus,
 
 .nav-items li a {
     font-family: 'NimbusReg', 'Didact Gothic', 'Maven Pro', sans-serif;
-    font-size: 0.5em;
+    font-size: 0.7em;
     color: #005FB2;
     border-top: 2px solid transparent;
     -webkit-transition: all .25s linear;
