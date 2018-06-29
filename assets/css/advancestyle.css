@@ -155,7 +155,7 @@
 }
 
 .dropdown-toggle{
-    padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px solid transparent;border-radius:4px color:#fff;background-color:#337ab7;border-color:#2e6da4; color: #fff;
+    padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;border-radius:4px; border-color:#2e6da4; color: #fff; background-image: linear-gradient(to right,#00b07f 0%,#005eb2 100%) !important;
 }
 
 .dropdown-menu {
