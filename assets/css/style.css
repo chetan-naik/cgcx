@@ -1636,6 +1636,7 @@ input:-webkit-autofill:active {
 .info-card h4 , .back p , .back h4{
     color: black;
     text-align: center;
+    margin-top: 30px;
 }
 
 .front, .back {
@@ -1647,7 +1648,7 @@ input:-webkit-autofill:active {
 }
 
 .front {
-    background: #00B07F;
+    background-image: linear-gradient(to right,#00b07f 0%,#005eb2 100%);
     overflow: hidden;
     width: 300px;
     height: 300px;
@@ -1656,7 +1657,7 @@ input:-webkit-autofill:active {
 }
 
 .back {
-    background: #fff;
+    background: #ffffffde;
     padding: 20px;
     padding-top: 0px;
     width: 300px;
@@ -1667,7 +1668,8 @@ input:-webkit-autofill:active {
     font-size: large;
 }
 
-.back p { font-size: small;  }
+.back p { font-size: small; color: #828384; }
+.back h4{ color: #045eb2;  }
 
 .info-card:hover .back {
     -webkit-transform: rotateY(0);

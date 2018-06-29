@@ -30,10 +30,10 @@
     <link href="assets/css/particlestyle.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="assets/css/owlcarousel/owl.carousel.min.css"> -->
 
+    <link rel="stylesheet" type="text/css" href="assets/css/advancestyle.css">
+
     <!-- Material Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/advancestyle.css">
 
     <!-- Font Awesomes -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
@@ -41,8 +41,6 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Didact+Gothic|Roboto" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
     <!-- Animate On Scroll (AOS) Library -->
     <link href="assets/css/aos.css" rel="stylesheet">
@@ -293,6 +291,17 @@
         </div>
         <!-- End Ticker Widget -->
 
+        <hr>
+
+        <section style="padding: 1%; padding-left: 4%;">
+            <table style="width: 100%;" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                    <td width="10%"><div ap-widget="InstrumentSelect"></div></td>
+                    <td width="90%"><div ap-widget="Ticker"></div></td>
+                </tr>
+            </table>
+        </section>
+
         <!-- Utility -->
         <section id="exchange" class="section container-fluid chapter features" style="padding-bottom: 0;">
             <div class="row align-items-center justify-content-center content-box-container w-95-center" style="margin-top: 0;">
@@ -425,11 +434,6 @@
 
         </section>
         <!-- End Key Attributes -->
-
-        <section>
-            <!-- <div ap-widget="InstrumentSelect"></div> -->
-            <div ap-widget="Ticker"></div>
-        </section>
 
         <!-- Exchange With Liquid Orderbooks -->
 <!--         <section id="Orderbooks" class="section container-fluid chapter features" style="min-height: 500px; padding-bottom: 0; padding-top: 0; background: #fff;">
@@ -585,7 +589,9 @@
 
     <div id="merchantDepositConfirmation" ap-wrapper="MerchantDepositConfirmation"><span></span></div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>   
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
@@ -656,7 +662,7 @@
 
     <!-- <style type="text/css">.owl-nav{ display: none !important; }</style> -->
 
-    <!-- Particle  -->  
+    <!-- Particle  --> 
     <script src="js/particle/particles.min.js"></script>
     <script src="js/particle/app.js"></script>
 
