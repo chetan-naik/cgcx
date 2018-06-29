@@ -1,4 +1,7 @@
 var APConfig = {
+  excludedProducts: ['AED'],
+  // excludedInstruments: ['BTCAED'],
+  maxFormTextLength: 128,
   showDepositBankDetails: false,
   depositFileUpload: false,
   showWidgetPageNumbers: true,
@@ -10,41 +13,40 @@ var APConfig = {
   },
   registerFormModal: true,
   displayBalancesHeaders: true,
+  tickerBlock: "TickerBlockPxChange",
   allowCryptoPairs: false,
   showBlockTradeUI: false,
-  siteName: 'alphapoint',
-  siteTitle: 'Retail UI',
+  siteName: "calfin",
+  siteTitle: "CGCX Exchange",
   templateStyle: 'retail',
   apexSite: true,
   clefLogin: '87c01336758f612feba9721d2c478059',
   useClef: false,
   useDepositTemplates: true,
   clefFix: true,
-  usePagi: false,
-  usePagiExchange: true,
+  pagination: true, // Enable pagination with the default style.
+  useBootstrapPagination: true, // Enable using bootstrap style for pagination in dashboard pages, not trade
   usePairDropdown: true,
   chart_dark: true,
   clefRedirectURL: 'http://qa1.alphapoint.com/clef.response.html',
-  // confirmWithEmail: true, // To confirm withdraw with email
-
-  // advancedUIKYC: true, // Use to enable styling conditions for KYC modal in the advancedUI hamburger menu
-  // confirmWithEmail: true, // To confirm withdraw with email
-  kycType: 'IM', // Or use 'greenId' or 'ManualKYC'
-  mitekWithIdentityMind: true,
-  kycClientId: 'a407a1fb64b5462cbbdc7dc1a2c7f615', // for GreenId or IM
-  // sendDocsToEmail: "michael.wolf@alphapoint.com", // For ManualKYC
-  // UnderManualReviewLevel: 1, // For GreenId
-  // VerifiedLevel: 2, // For GreenId.
-  kycRequiredFields: ['dob', 'email', 'firstName', 'lastName'],
+  interswitchRedirectURL: 'https://apexqa.alphapoint.com/trade.html',
+  instrumentSelectTicker: true,
+  kycType: 'IM',
+  kycFields: {
+    dob: ['required'],
+    firstName: ['required', 'alphanumeric'],
+    lastName: ['required', 'alphanumeric'],
+    telephone: ['required', 'integer'],
+  },
   hideKYCVerifySteps: true,
-  // internalKYCRedirect: true,
-  // internalKYCRedirectURL: 'https://kyc.quantaplc.im/api/login',
-  // openKYCRedirectInNewWindow: true,
-  useVerificationRequired: true,
-
-  API_V2_URL: 'wss://api_apexqa.alphapoint.com/WSGateway/',
+  hideKYCProgressBar: true,
+  // useVerificationRequired: true,
+  // verificationRequiredLevel: [0,1,2],
+  dateFormat: 'MM-DD-YYYY',
+  API_V2_URL: "wss://api.exchange.cgcx.io/WSGateway/",
+  API_LINK: "https://exchange.cgcx.io/api.pdf",
   serversList: [
-    'wss://api_apexqa.alphapoint.com/WSGateway/',
+    'wss://apicalfinprod.alphapoint.com/WSGateway/',
   ],
   useServerSelect: false,
   OperatorId: 1,
@@ -56,6 +58,7 @@ var APConfig = {
   logoutRedirect: 'index.html',
   defaultLanguage: 'en',
   languagesLocation: 'lang',
+  languages: {items:  [{name: "English", value: "en"},{name: "Chinese", value: "ch"}]},
   charting_library: 'libs/charting_library_new/',
   authy2FA: false,
   authGoogle: true,
@@ -118,7 +121,7 @@ var APConfig = {
       "volumePaneSize": "large",
       "mainSeriesProperties.candleStyle.upColor": "#28A631",
       "mainSeriesProperties.candleStyle.downColor": "#BD2B35",
-      "mainSeriesProperties.candleStyle.drawWick": false,
+      "mainSeriesProperties.candleStyle.drawWick": true,
       "mainSeriesProperties.hollowCandleStyle.drawWick": false,
       "mainSeriesProperties.haStyle.drawWick": false
     }
