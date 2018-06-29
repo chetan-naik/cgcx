@@ -289,7 +289,7 @@ a:focus,
     position: absolute;
     height: 3px;
     width: 100%;
-    background: #ffffff !important;
+    background: #0060B1 !important;
     border-radius: 4px;
     opacity: 1;
     left: 0;
@@ -329,7 +329,7 @@ ul.menu {
     top: 0;
     right: -300px;
     /* background: #ddd; */
-    background: #0d141d;
+    background: #0060B1;
     -webkit-transition: all .25s ease-in;
     -moz-transition: all .25s ease-in;
     transition: all .25s ease-in;
@@ -351,7 +351,8 @@ ul.menu {
 .menu-item {
     position: relative;
     margin-bottom: 26px;
-    font-size: 29px;
+    /*font-size: 29px;*/
+    font-size: 1.4em;
 }
 
 .menu-item a {
@@ -1051,7 +1052,7 @@ section {
 }
 
 .headline {
-    font-size: 2em
+    font-size: 2em;
 }
 
 .force-flex-break {
@@ -1617,7 +1618,63 @@ input:-webkit-autofill:active {
 @media (max-width: 1024px) { .nav-items-container{ right: 0%; } .nav-items li a{ font-size: 0.4em;  }  .nav-items li{ padding-right: 0.8em; } }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) { .visible-xs , .visible-sm{ display: block; } .headline{ font-size: 35px !important; } .footerblock{ margin: 20px; } }
+@media (max-width: 768px) { .visible-xs , .visible-sm{ display: block; } .headline{ font-size: 35px !important; } .footerblock{ margin: 20px; } .headline{ padding-top: 24% !important; } }
  
 /* Landscape phones and down */
-@media (max-width: 480px) { .visible-xs , .visible-sm{ display: block; } .headline{ font-size: 35px !important; } .footerblock{ margin: 20px; } }
+@media (max-width: 480px) { .visible-xs , .visible-sm{ display: block; } .headline{ font-size: 35px !important; } .footerblock{ margin: 20px; } .headline{ padding-top: 24% !important; } }
+
+
+.info-card {
+    float: left;
+    margin: 10px;
+    -webkit-perspective: 600px;
+}
+
+.info-card h4 , .back p , .back h4{
+    color: black;
+    text-align: center;
+}
+
+.front, .back {
+    border-radius: 10px;
+    transition: -webkit-transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    border: 0px solid black;
+}
+
+.front {
+    background: #00B07F;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+}
+
+.back {
+    padding: 20px;
+    padding-top: 0px;
+    width: 300px;
+    height: 300px;
+    -webkit-transform: rotateY(-180deg);
+    overflow: scroll;
+    color: #000 !important;
+    font-size: large;
+}
+
+.info-card:hover .back {
+    -webkit-transform: rotateY(0);
+}
+
+.info-card:hover .front {
+    -webkit-transform: rotateY(180deg);
+}
+
+.card-image {
+    width: 50%;
+    height: 60%;
+    margin: 25%;
+    margin-top: 10%;
+    margin-bottom: 0px;
+}
