@@ -57,7 +57,7 @@ const runOnScroll = () => {
                 'color': 'white'
             });
             $('.nav').css({
-                'background': '#0177a4',
+                'background': '#ffffff',
                 'border-bottom': '0'
             });
 
@@ -77,7 +77,7 @@ const runOnScroll = () => {
                 'color': 'white'
             });
             $('.nav').css({
-                'background': '#0177a4',
+                'background': '#ffffff',
                 'border-bottom': '0'
             });
 
@@ -97,7 +97,7 @@ const runOnScroll = () => {
                 'color': 'white'
             });
             $('.nav').css({
-                'background': '#0177a4',
+                'background': '#ffffff',
                 'border-bottom': '0'
             });
 
@@ -117,7 +117,7 @@ const runOnScroll = () => {
                 'color': '#3b4251'
             });
             $('.nav').css({
-                'background': '#0177a4',
+                'background': '#ffffff',
                 'border-bottom': '1px solid rgba(0, 0, 0, 0.15)'
             });
             break;
